@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joe's Hotdogs</title>
+    <link rel="stylesheet" href="hotdogs.css" />
+    <script src="hotdogs.js"></script>
+  </head>
+</html>
+<body>
+  <div class="content">
+    <h1>Joe's Hotdogs</h1>
+    <p>How many hotdogs would you like?</p>
+    <form>
+      <input type="number" name="hotdogs" id="hotdogs" />
+    </form>
+    <p>How many fries would you like?</p>
+    <form>
+      <input type="number" name="fries" id="fries" />
+    </form>
+    <p>How many drinks would you like?</p>
+    <form>
+      <input type="number" name="drinks" id="drinks" />
+    </form>
+    <p>Calculate your Total</p>
+    <form>
+      <input
+        class="myButton"
+        type="button"
+        value="Calculate Total"
+        onclick="total(this.form)"
+      />
+      <input
+        class="myButton"
+        type="button"
+        onclick="blank(this.form)"
+        id="reload"
+        value="Reset Order"
+      />
+    </form>
+  </div>
+</body>
